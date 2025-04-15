@@ -78,5 +78,4 @@ def mostrar_subcuadro(tablero, fila, col):
     print("Subcuadro:")
     print(subcuadro)
 
-# Ejemplo:
 mostrar_subcuadro(sudoku, 4, 7)
