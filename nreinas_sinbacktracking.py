@@ -46,3 +46,4 @@ def n_reinas(n):
             fila -= 1
 
 n_reinas(5)
+
