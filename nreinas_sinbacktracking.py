@@ -1,6 +1,7 @@
 import numpy as np
 
 def n_reinas(n):
+        
     def imprimir_tablero(tablero):
         tablerito = np.zeros((n, n))
         for fila in range(n):
@@ -31,6 +32,8 @@ def n_reinas(n):
             else:
                 tablero[fila] += 1  # Intentamos la siguiente columna
 
+
+        ##Se sustituye la funcion resolvedor (aqui se quita la recursividad)
         if tablero[fila] < n:
             if fila == n - 1:
                 imprimir_tablero(tablero)
@@ -44,6 +47,8 @@ def n_reinas(n):
             # No hay más columnas válidas en esta fila, hacemos backtracking
             tablero[fila] = -1
             fila -= 1
+
+
 
 n_reinas(5)
 

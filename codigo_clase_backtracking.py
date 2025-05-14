@@ -1,6 +1,8 @@
 import numpy as np
 
 def n_reinas(n):
+    
+    
     def resolvedor(tablero, fila):
         if fila == n:
             imprimir_tablero(tablero, n)

@@ -69,13 +69,13 @@ else:
 
 ##(7,8)
 
-def mostrar_subcuadro(tablero, fila, col):
-    inicio_fila = (fila // 3) * 3
-    inicio_col = (col // 3) * 3
-    subcuadro = tablero[inicio_fila:inicio_fila+3, inicio_col:inicio_col+3]
+# def mostrar_subcuadro(tablero, fila, col):
+#     inicio_fila = (fila // 3) * 3
+#     inicio_col = (col // 3) * 3
+#     subcuadro = tablero[inicio_fila:inicio_fila+3, inicio_col:inicio_col+3]
 
-    print(f"Celda ({fila}, {col}) está en el subcuadro que empieza en ({inicio_fila}, {inicio_col})")
-    print("Subcuadro:")
-    print(subcuadro)
+#     print(f"Celda ({fila}, {col}) está en el subcuadro que empieza en ({inicio_fila}, {inicio_col})")
+#     print("Subcuadro:")
+#     print(subcuadro)
 
-mostrar_subcuadro(sudoku, 4, 7)
+# mostrar_subcuadro(sudoku, 4, 7)
