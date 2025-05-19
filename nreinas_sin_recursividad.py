@@ -2,11 +2,19 @@ import numpy as np
 
 def n_reinas(n):
         
+    
+    ##Pone una matriz llena de ceros y pone un 1 donde haya una reina
     def imprimir_tablero(tablero):
+        ##Matriz de puros 0 nxn
         tablerito = np.zeros((n, n))
+        
+        ##Recorre cada fila del tablero
         for fila in range(n):
+            ##Aun no hay reina ahi
             if tablero[fila] != -1:
-                tablerito[fila, tablero[fila]] = 1
+                ##Pone un uno en la posicion de la reina 
+                tablerito[fila, tablero[fila]] = 1 
+        ##Imprime la matriz con 1 donde hay una reina y 0 donde no hubo pq de eso ya estaba llena
         print(tablerito)
         print()
 
@@ -61,3 +69,4 @@ def n_reinas(n):
 
 n_reinas(5)
 
+##NOTA: tablero[fila] representa la columna donde esta la reina 
